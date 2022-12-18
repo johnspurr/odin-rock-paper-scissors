@@ -27,6 +27,18 @@ function playRound(playerSelection, computerSelection, score) {
     return `You lost! ${titleCase(computerSelection)} beats ${playerSelection}.`
 }
 
-const playerSelection = "rock";
-const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
+function game(maxRounds = 5) {
+    for (let round = 1; round <= maxRounds; round++) {
+        let computerSelection = getComputerChoice();
+        var playerSelection;
+
+        do {
+            playerSelection = prompt(`Round ${round}! Choose rock, paper, or scissors.`)
+        } while (playerSelection !== "rock" && playerSelection !== "paper" && playerSelection !== "scissors")
+
+        result = playRound(playerSelection, computerSelection)
+        console.log(`Round ${round}: ${result}`)
+    }
+}
+
+game();
