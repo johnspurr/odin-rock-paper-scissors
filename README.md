@@ -1,2 +1,2 @@
-# odin-rock-paper-scissors
-Rock, paper, scissors in the the dev tools console.
+# Project: Rock Paper Scissors
+A simple implementation of Rock, Paper, Scissors using the javascript dev console.
