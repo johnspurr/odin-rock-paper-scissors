@@ -3,10 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock, Paper, Scissors!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>♻️</text></svg>">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    Open the dev console (Ctrl + Shift + J) to play Rock, Paper, Scissors!
-    <script src="script.js"></script>
+    <div class="header">
+        <h1>Rock, Paper, Scissors!</h1>
+    </div>
+    <div class="container">
+        <div class="buttons">
+            <button id="rock">🪨</button>
+            <button id="paper">📄</button>
+            <button id="scissors">✂️</button>
+        </div>
+        <div class="score">
+            <div class="score-box" id="player">
+                <p class="score-header">Player</p>
+                <p class="score-text">0</p>
+            </div>
+            <div class="score-box" id="computer">
+                <p class="score-header">Computer</p>
+                <p class="score-text">0</p>
+            </div>
+        </div>
+        <div class="status">
+            <h3 id="round">Game start</h3>
+            <p>Make your move!</p>
+        </div>
+    </div>
 </body>
 </html>
